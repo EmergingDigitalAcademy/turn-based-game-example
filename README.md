@@ -4,7 +4,10 @@ This is a small dice game, no database.
 
 A game is created when the server boots up. Just POST a turn for each player with `player_id` and `locked`:
 
-POST /game/10
+GET /game/ to retrieve an array of games.
+POST /game/ to make a new game
+
+POST /game/10 to take a turn
 
 ```
 {
